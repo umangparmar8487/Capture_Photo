@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Capture Photo</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="capture">Capture</string>
+    <string name="click_image">Click Image</string>
+    <string name="setting">Setting</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="permission_denied_message">This app requires permission to use certain features. You can allow permission from your phone settings.</string>
+</resources>

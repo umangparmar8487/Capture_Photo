@@ -1,0 +1,47 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- ViewModel variable for data binding -->
+        <variable
+            name="viewModel"
+            type="com.example.capturephoto.cameraactivity.viewmodel.CameraViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".cameraactivity.view.CameraActivity">
+
+        <!-- Camera Preview -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Transparent Viewport Overlay -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000">
+
+            <!-- Transparent Viewport -->
+            <FrameLayout
+                android:id="@+id/viewport"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:background="@drawable/viewport_background" />
+        </FrameLayout>
+
+        <!-- Capture Button -->
+        <Button
+            android:id="@+id/btnCapture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="16dp"
+            android:text="@string/capture"
+            android:onClick="@{() -> viewModel.captureImage()}" />
+    </FrameLayout>
+</layout>

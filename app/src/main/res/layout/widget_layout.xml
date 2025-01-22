@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <!-- Click Image Button -->
+    <Button
+        android:id="@+id/widgetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Image" />
+
+    <!-- Location Service Toggle -->
+    <Switch
+        android:id="@+id/widgetSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location Service" />
+
+    <TextView
+        android:id="@+id/tvLat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+</LinearLayout>
